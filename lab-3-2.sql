@@ -40,3 +40,8 @@
 -- +-------------------------------+------------------+
 
 
+select name, AVG(wins)
+from teams
+where year >2001
+group by name
+;
